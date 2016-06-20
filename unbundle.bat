@@ -1,2 +1,3 @@
-cd /d C:\Program Files (x86)\Witcher 3 Mod Tools\bin\x64
-call wcc_lite uncook -indir="C:\Program Files (x86)\Steam\steamapps\common\The Witcher 3\content\content0\bundles"  -outdir=C:\Mods\Fatigue\Unpacked -skiperrors -imgfmt=tga -unbundleonly
+call packVariables.cmd
+cd /d "%modKitPath%"
+call wcc_lite uncook -indir="%gamePath%\content\content0\bundles"  -outdir=%modPath%\Unpacked -skiperrors -imgfmt=tga -unbundleonly
